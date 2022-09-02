@@ -1,0 +1,375 @@
+
+/* HEADER  */
+.pageInfor-home{
+  background-image: url('../img/rocket-2.svg'), url('../img/cloud.svg') ;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 140% 100%, top right;
+  background-size: 900px 900px, 750px;
+}
+.pageInfor-header-contain{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.link{
+  padding: 0.5rem;
+}
+
+.navbar a{
+  color: #fff;
+  font-size: 1rem;
+}
+
+.navbar a:hover{
+  color: #FFC107;
+  transition: 0.2s;
+
+
+}
+.pageInfor-logoSBC{
+  background-color: #fff;
+  border-radius: 4px;
+
+}
+.pageInfor-logoSBC img {
+  width: 5rem;
+}
+
+/* HOME  */
+.calendar{
+  list-style-position: inside;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #EDF0F2;
+  color: #385984;
+  padding: 2rem;
+  gap: 2rem;
+
+  border-radius: 1rem;
+  margin: 4rem 0;
+}
+
+.date{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: #FFC107;
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+.btn{
+  display: block;
+  padding: 1rem 3.5rem;
+  background-color: #385984;
+  color: #ffff;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+.btn-align-selff-center{
+  align-self: center;
+}
+
+.btn:hover{
+  filter: brightness(0.9);
+  transition: 0.2s;
+}
+.text-yellow{
+  color: #FFC107;
+  font-weight: 600;
+}
+/* SECTION EVENT */
+
+.pageInfor-section-event{
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.pageInfor-code-evironment{
+  background-color: #385984;
+  padding: 2rem;
+  color: #fff;
+  border-radius: 1rem;
+}
+
+.pageInfor-code-evironment h2{
+ 
+  padding-bottom: 2rem;
+}
+
+.pageInfor-code-evironment p{
+  padding-bottom: 1rem;
+}
+
+.pageInfor-code-evironment ul{
+  list-style: disc;
+}
+
+.pageInfor-scheldule{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.pageInfor-scheldule h2{
+  padding-bottom: 2rem;
+  color: #385984;
+}
+
+.language, .evironment{
+  padding: 2rem 0 2rem 2rem;
+}
+
+.pageInfor-divisor{
+  height: 26rem;
+  min-width: 1.5rem;
+  background-color: #131F2E;
+  position: relative;
+}
+
+.pageInfor-divisor::after{
+  content: '';
+  width: 55px;
+  height: 60px;
+  background-image: url('/assets/img/icons/Medal.jpg');
+  background-size: 55px 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position:absolute;
+  bottom: -60px;
+  left: -16px;
+}
+
+.pageInfor-hours{
+  display: flex;
+  align-items: center;
+}
+
+.pageInfor-hours-col-1{
+
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 6rem 0;
+}
+
+.pageInfor-hours-col-2{
+
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 1rem 0;
+}
+
+.pageInfor-hour-col-1{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pageInfor-hour-col-1 p, .pageInfor-hour-col-2 p{
+  background-color: #FFC107;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  font-size: 0.875rem;
+}
+
+.pageInfor-hour-col-1::after{
+  content: "";
+  border-top:24px solid #131F2E ;
+  border-left: 50px solid #131F2E;
+ 
+}
+
+.pageInfor-hour-col-2{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.pageInfor-hour-col-2::before{
+  content: "";
+  /* width: 50px; */
+
+  border-top:24px solid #131F2E ;
+  border-left: 50px solid #131F2E;
+ 
+}
+
+
+/* SECTION PLACE  */
+
+.pageInfor-place{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pageInfor-place h2{
+  padding-bottom: 2rem;
+  color: #385984;
+}
+
+.pageInfor-map-place{
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 6rem;
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+}
+
+.pageInfor-cards-contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+
+.pageInfor-address, .pageInfor-contact{
+  padding: 1.5rem 3rem 1.5rem 1.5rem;
+  background-color: #385984;
+  color: #fff;
+  line-height: 1.8;
+
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+
+.pageInfor-address{
+  margin-bottom: 1rem;
+}
+.pageInfor-contact a{
+  color: #fff;
+}
+
+.pageInfor-address{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 3px;
+}
+.pageInfor-contact{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 10px;
+}
+.pageInfor-social-media{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.pageInfor-social-media a img{
+  width: 32px;
+}
+
+.mapouter{
+  position:relative;
+  text-align:right;
+  height:500px;
+  width: 500px;
+}
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:500px;
+  width:500px;
+  border-radius: 0.5rem;
+}
+/* SECTION ABOUT  */
+
+.pageInfor-section-about{
+  margin-bottom: 6rem;
+}
+
+.pageInfor-section-about h2{
+  padding-bottom: 2rem;
+  color: #385984;
+}
+
+.text-blue{
+  color: #385984;
+}
+
+.about{
+
+}
+.rule{
+
+}
+.about p{
+  text-align: justify;
+  text-indent: 2rem;
+  padding: 1rem 0;
+  line-height: 1.3;
+}
+
+.about h2, .rule h2{
+  text-align: center;
+}
+
+.rule ul{
+  list-style: disc;
+  padding-left: 1rem;
+}
+.rule ul > li {
+  text-align: justify;
+  padding: 1rem 0;
+
+}
+.rule ol {
+  padding-top: 2rem;
+}
+.rule ol > li{
+  padding: 1rem 0;
+  margin-left: 2rem;
+}
+
+/* FOOTER  */
+
+.section-footer{
+  text-align: center;
+}
+
+.footer-img{
+  margin: 3rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 1.25rem;
+}
+
+.organization img{
+  width: 9.3rem;
+}
