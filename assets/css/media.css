@@ -4,8 +4,8 @@
   }
 /*====HOME====*/
   .section-header{
-    min-height: calc(100vh + 80px);
-    background-image: url('../img/background-resopnsive-home.svg');
+    min-height: calc(60vh + 80px);
+    background-image: url("/assets/img/background-resopnsive-home.svg");
     background-size: contain, cover;
     background-repeat: no-repeat, no-repeat;
     background-position: bottom right, bottom right;
@@ -14,27 +14,34 @@
     margin-bottom: -1%;
     width: 100%;
   }
-  
+  .container-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .holder{
     width: 100%;
-    max-width: 25rem;
+    max-width: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 1;
     position: relative;
-    margin: 5rem 5rem 5rem 6rem;
-
-    margin-left: 27vw;
+    gap: 1rem;
+   }
+  .holder p{
+    max-width: 90%;
   }
-  
+  #btn-more{
+    margin-top: 4rem;
+  }
   .holder::after{
     position: absolute;
     top: -90px;
     content: '';
-    width: 580px;
-    height: 550px;
+    width: 505px;
+    height: 480px;
     background-image: url('../img/polygon.svg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -128,20 +135,34 @@
 }
 
 @media screen and (max-width: 725px){
+  .holder::after{
+    width: 100px;
+  }
   /*===TIMELINE===*/
 .timeline{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .timeline img{
-  height: 530px;
-  width: 510px;
+  height: 420px;
+  width: 380px;
   
   transition: ease, all 0.5;
 }
 
 /*====MAP====*/
-.map iframe{
+.gmap_canvas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapouter{
+  display: flex;
+  max-width: 300px;
+}
+.gmap_canvas iframe{
   max-height: 300px;
   max-width: 310px;
 }
@@ -152,16 +173,33 @@
 }
 
 @media screen and (max-width: 425px){
+  html{
+    min-width: 100vw;
+    min-width: 100%
+;
+  }
+.holder::after{
+  background-image:none;
+}
     /*===TIMELINE===*/
 .timeline{
   display: flex;
   justify-content: center;
 }
 .timeline img{
-  height: 430px;
-  width: 410px;
+  height: 400px;
+  width: 330px;
   
   transition: ease, all 0.5;
+}
+.gmap_canvas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gmap_canvas iframe{
+  max-height: 250px;
+  max-width: 260px;
 }
 
 }
